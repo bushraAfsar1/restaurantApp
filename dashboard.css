@@ -1,0 +1,138 @@
+#trEdit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.resturant:hover{
+    border-radius: 10px;
+    box-shadow: grey 1px 1px 5px 2px;
+}
+
+.resturant{
+    background-color: #e3e5e54c;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer; 
+}
+
+#cartTable {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#cart {
+    position: fixed;
+    right: 0;
+    bottom: 20%;
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid silver;
+    box-shadow: grey 1px 1px 10px 5px;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.total {
+    width: 100%;
+    text-align: center;
+}
+
+.cartItem {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#itemList{
+    background-color: #e3e5e54c;
+    box-shadow: silver 1px 2px 8px 1px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 0px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.header {
+    border: 2px solid #aeabab95;
+    box-shadow: #b0aeae 2px 1px 3px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#e3e5e54c;
+    padding: 0px 20px;
+    height: 80px;
+}
+
+#logoutBtn {
+    background-color: #000000c5;
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 25px;
+}
+
+button:hover {
+    box-shadow: #b0aeae 1px 1px 5px 1px;
+    border: 2px solid grey;
+}
+
+tr td{
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    text-decoration-line: underline;
+    padding:0px 20px;
+}
+#add ,#backBtn{
+    background-color: #0000005c;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
+#backBtn{
+    margin: 20px;
+}
+
+#add:active {
+    border: 2px solid white;
+
+}
+#backBtn:active {
+    border: 2px solid white;
+
+}
+#logoutBtn:active {
+    border: 2px solid white;
+
+}
+@media (max-width: 1000px){
+    #cart {
+        position: fixed;
+        bottom: 0%;
+        height: 30px;
+        width: 100%;
+        background-color: white;
+        border: 1px solid silver;
+        box-shadow: grey 1px 1px 10px 5px;
+        border-radius: 10px;
+        overflow: auto;
+    }
+        
+  .cartItem {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+    
+}
